@@ -1,0 +1,286 @@
+/* ================================== MAIN ======================== */
+
+.mainWrap {
+	padding: 0 10px;
+	max-width: 1440px;
+	min-width: 970px;
+	margin: 0 auto;
+}
+
+/* =============== leftBar ========================== */
+.leftBar {
+	width: 230px;
+	float: left;
+}
+
+.list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.list__feed,
+.list__ask,
+.list__companies,
+.list__service {
+	padding: 10px 10px 10px 50px;
+	border-bottom: 1px solid #e0e2e6;
+}
+
+.list__link {
+	text-decoration: none;
+	font-size: 16px;
+	color: #59606b;
+}
+
+.list__feed {
+	background-image: url("../images/house.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+}
+
+
+.list__ask {
+	background-image: url("../images/what.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+}
+
+.list__companies {
+	background-image: url("../images/111.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+}
+
+.list__service {
+	background-image: url("../images/doc.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+}
+
+.adv {
+	color: #7c8695;
+	font-size: 12px;
+}
+
+.advImgLink {
+	display: block;
+	width: 220px;
+	height: 310px;
+	background-image: url("../images/adv.png");
+	background-size: cover;
+
+}
+
+.ads {
+	text-decoration: none;
+	color: #d3d3d3;
+	font-size: 12px;
+	display: inline-block;
+	margin: 5px 0 15px;
+}
+
+.hr {
+	width: 100%;
+	height: 1px;
+	background-color: #e0e2e6;
+}
+
+.featureHeader {
+	padding: 15px 0;
+	overflow: hidden;
+}
+
+.feature__text {
+	float: left;
+	color: #7c8695;
+	font-size: 14px;
+	margin: 0;
+}
+
+.see {
+	text-decoration: none;
+	float: right;
+	font-size: 14px;
+	padding-right: 5px;
+	color: #1c2534;
+}
+
+.featureBlock {
+	padding-bottom: 20px;
+}
+
+.featureTopic {
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+.featureTopic__img {
+	float: left;
+	margin-right: 10px;
+}
+
+.featureTopic__header {
+	font: 500 16px Roboto;
+	margin: 0 0 3px;
+}
+
+.featureTopic__service,
+.featureTopic__city {
+	font: 400 14px Roboto;
+	margin: 0;
+	padding: 0 0 3px;
+	color: #7c8695;
+}
+
+.featureTopic__link {
+	text-decoration: none;
+	color: #1c2534;
+	display: inline-block;
+	padding: 3px 0;
+	font: 500 12px Roboto;
+	margin: 0;
+}
+
+.cpr {
+	font: 400 12px Roboto;
+	color: #b7bfcd;
+}
+
+.terms,
+.pp {
+	text-decoration: none;
+	padding-right: 10px;
+	font: 400 12px Roboto;
+	color: #b7bfcd;
+}
+
+// right sideBar
+
+.peopleWrap__header {
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.peopleLinks__peopleImg {
+	float: left;
+}
+
+.peopleLinks {
+	margin: 20px 0;
+}
+
+.peopleLinks *{
+margin: 0;
+overflow: hidden;
+}
+
+/* =================== main ======================== */
+.main {
+	width: calc(100% - 490px);
+	float: left;
+	padding: 20px 15px;
+}
+
+.mainHeader {
+	overflow: hidden;
+	padding-bottom: 20px;
+
+}
+
+.mainHeader__text {
+	margin: 0;
+	color: #1c2534;
+	font: 400 30px 'Roboto';
+	float: left;
+}
+
+.btn {
+	cursor: pointer;
+	float: right;
+	border-radius: 5px;
+	font-size: 14px;
+	border-style: none;
+	background-color: #87b448;
+	color: #fff;
+	width: 145px;
+	height: 30px;
+}
+
+.servicesWrap {
+	width: calc(100% -20px);
+	padding: 7px;
+	border: 1px solid #e0e2e6;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.mainServices {
+	width: 140px;
+	margin: 7px;
+	padding-bottom: 15px;
+}
+
+.mainServices:hover .mainServices__serviceName {
+	color: #71973c;
+	transition: color .3s ease;
+}
+
+.mainServices:hover .mainServices__serviceImg {
+	background-color: #f4f7fb;
+	transition: background-color .3s ease;
+}
+
+.mainServices__serviceImg {
+	position: relative;
+	cursor: pointer;
+	transition: background-color .3s ease;
+	border: 1px solid #e0e2e6;
+}
+
+.mainServices__imgLink {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 140px;
+}
+
+.mainServices__icon {
+	width: 140px;
+	height: 140px;
+	object-fit: contain;
+}
+
+.mainServices__serviceName {
+	display: inline-block;
+	text-decoration: none;
+	transition: color .3s ease;
+	color: #1c2534;
+	font: 400 14px Roboto;
+	padding: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightBar {
+	width: 230px;
+	float: right;
+}

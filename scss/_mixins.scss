@@ -1,0 +1,8 @@
+// подключение шрифтов
+@mixin setFont($fntFam, $src, $type) {
+	font-family: $fntFam;
+    src: url($src) format($type);
+    font-weight: normal;
+    font-style: normal;
+}
+
