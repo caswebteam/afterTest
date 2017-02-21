@@ -4,11 +4,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Документ без названия</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/style.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/iziModal.min.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/modalMaster/iziModal.min.js"></script>
 </head>
 
 <body>
+    <div id="modal">
+    <!-- Page content -->
+    </div>
     <header id="header" class="header">
         <div class="header__headerWrap">
             <div class="header__logoWrap">
@@ -32,7 +37,7 @@
     <div class="mainWrap">
         <section class="leftBar">
             <ul class="list">
-            <li class="list__feed mainTextColor"><a class="list__link" href="#">Feed</a></li>
+            <li class="list__feed mainTextColor"><a class="list__link" href="#">Feed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nobis doloremque, vitae distinctio.</a></li>
             <li class="list__ask mainTextColor"><a class="list__link" href="#">Ask a Colleague</a></li>
             <li class="list__companies mainTextColor"><a class="list__link" href="#">Companies</a></li>
             <li class="list__service mainTextColor"><a class="list__link" href="#">Service Directory</a></li>
@@ -48,24 +53,30 @@
                 </header>
                 <section class="featureTopic">
                     <img class="featureTopic__img" src="images/1.1.png" alt="">
-                    <h3 class="featureTopic__header">Company Name</h3>
-                    <p class="featureTopic__service">Manufacturer</p>
-                    <p class="featureTopic__city">Belgrade, Serbia</p>
-                    <a href="#" class="featureTopic__link">Follow Now</a>
+                    <div class="featureTopic__padding">
+                        <h3 class="featureTopic__header">Company Name</h3>
+                        <p class="featureTopic__service">Manufacturer</p>
+                        <p class="featureTopic__city">Belgrade, Serbia</p>
+                        <a href="#" class="featureTopic__link">Follow Now</a>
+                    </div>
                 </section>
                 <section class="featureTopic">
                     <img class="featureTopic__img" src="images/1.2.png" alt="">
-                    <h3 class="featureTopic__header">Company Name</h3>
-                    <p class="featureTopic__service">Manufacturer</p>
-                    <p class="featureTopic__city">Belgrade, Serbia</p>
-                    <a href="#" class="featureTopic__link">Follow Now</a>
+                   <div class="featureTopic__padding">
+                       <h3 class="featureTopic__header">Company Name</h3>
+                       <p class="featureTopic__service">Manufacturer</p>
+                       <p class="featureTopic__city">Belgrade, Serbia</p>
+                       <a href="#" class="featureTopic__link">Follow Now</a>
+                   </div>
                 </section>
                 <section class="featureTopic">
                     <img class="featureTopic__img" src="images/1.3.png" alt="">
-                    <h3 class="featureTopic__header">Company Name</h3>
-                    <p class="featureTopic__service">Manufacturer</p>
-                    <p class="featureTopic__city">Belgrade, Serbia</p>
-                    <a href="#" class="featureTopic__link">Follow Now</a>
+                    <div class="featureTopic__padding">
+                        <h3 class="featureTopic__header">Company Name for example</h3>
+                        <p class="featureTopic__service">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="featureTopic__city">Belgrade, Serbia</p>
+                        <a href="#" class="featureTopic__link">Follow Now</a>
+                    </div>
                 </section>
             </div>
             <div class='hr'></div>
@@ -144,10 +155,10 @@
         </section>
     </div>
 </body>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 <script>
     var dntz = new Denteez({
-        numOfCards: 12
+        numOfCards: 0
     });
 
     dntz.__init__();
