@@ -3,7 +3,7 @@
 function Denteez(options) {
 
     var conteinerForServices = document.getElementsByClassName('servicesWrap')[0],
-        data;
+        data = null;
 
     var numOfCards = options.numOfCards || null;
 
@@ -22,7 +22,9 @@ function Denteez(options) {
             dataType: '',
             timeout: 3000,
             success: function(results) {
-                createCards(results);
+                data = results;
+                $('#modalC').iziModal('open');
+                
             },
             error: function() {
                 $('#modal').iziModal('open');
@@ -146,6 +148,55 @@ function Denteez(options) {
             onOpened: function() {},
             onClosing: function() {},
             onClosed: function() {}
+        });
+        getData();
+
+        $("#modalC").iziModal({
+            title: 'Отлично',
+            subtitle: 'Данные успешно загружены!',
+            headerColor: '#5a8fd6',
+            theme: '', // light
+            attached: '', // bottom, top
+            icon: null,
+            iconText: null,
+            iconColor: '',
+            rtl: false,
+            width: 600,
+            padding: 0,
+            radius: 3,
+            zindex: 999,
+            iframe: false,
+            iframeHeight: 400,
+            iframeURL: null,
+            focusInput: true,
+            group: '',
+            loop: false,
+            navigateCaption: true,
+            navigateArrows: true, // closeToModal, closeScreenEdge
+            history: true,
+            restoreDefaultContent: false,
+            autoOpen: 0, // Boolean, Number
+            bodyOverflow: false,
+            fullscreen: false,
+            openFullscreen: false,
+            closeOnEscape: true,
+            overlay: true,
+            overlayClose: true,
+            overlayColor: 'rgba(0, 0, 0, 0.4)',
+            timeout: 2000,
+            timeoutProgressbar: true,
+            pauseOnHover: false,
+            timeoutProgressbarColor: 'rgba(255,255,255,0.5)',
+            transitionIn: 'comingIn',
+            transitionOut: 'comingOut',
+            transitionInOverlay: 'fadeIn',
+            transitionOutOverlay: 'fadeOut',
+            onFullscreen: function() {},
+            onResize: function() {},
+            onOpening: function() {},
+            onOpened: function() {},
+            onClosing: function() {},
+            onClosed: function() {createCards.call(this, data);}
         });
         getData();
     }
