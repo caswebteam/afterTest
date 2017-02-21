@@ -25,11 +25,6 @@ function Denteez(options) {
                 createCards(results);
             },
             error: function() {
-                /*swal(
-                  'Ой...',
-                  'Не удалось получить данные из сервера, попробуйте еще раз!',
-                  'error'
-                )*/
                 $('#modal').iziModal('open');
             }
         });
